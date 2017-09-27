@@ -217,16 +217,16 @@ function sumUserPostLikes(user) {
 
 
 
-  var array = [];
+  var postObj = [];
 
     for (var i = 0; i < user.posts.length; i++) {
 
-      array.push(user.posts[i].likes);
+      postObj.push(user.posts[i].likes);
 
 
     }
 
-    var sum = array.reduce(function(x, y){
+    var sum = postObj.reduce(function(x, y){
       return x + y;
 
 
